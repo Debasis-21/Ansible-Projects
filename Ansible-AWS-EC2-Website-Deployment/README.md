@@ -30,19 +30,19 @@ The architecture consists of:
   - Connect to servers via private IP using the generated key.
 # 4. Install Ansible
 - **Install Ansible on the Ansible Machine:**
-```
-bash
-copy code
+   
+```bash
+
 sudo yum update -y
 sudo amazon-linux-extras install ansible2 -y
+
 ```
 # 5. Ansible Configuration
   - **Inventory File:** Lists all the servers.
   - **Playbook:** Automates the deployment process.
   - **Ansible Configuration:**
      - `ansible.cfg` file for default settings:
-```
-ini
+```ini
 Copy code
 [defaults]
 remote_user = ec2-user 
@@ -51,14 +51,12 @@ private_key_file = ~/.ssh/id_rsa
 ```
 # 6. Deployment
  - **Test Connectivity:**
-```
-bash
+```bash
 Copy code
 ansible all --key-file ~/.ssh/id_rsa -i inventory -m ping -u ec2-user
 ```
  - **Run the Playbook:**
-```
-bash
+```bash
 Copy code
 ansible-playbook deploy-techmax.yml
 ```
