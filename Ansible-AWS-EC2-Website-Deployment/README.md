@@ -2,7 +2,7 @@
 This project demonstrates how to automate the deployment of a web application on AWS EC2 instances using Ansible. The setup includes the creation of a secure Ansible machine and multiple servers to host the application.
 
 # Architecture Overview
-![Reference Architecture](Ansible-AWS-EC2-Website-Deployment/Reference Architecture.jpg)
+![Alt txt]()
 
 The architecture consists of:
 
